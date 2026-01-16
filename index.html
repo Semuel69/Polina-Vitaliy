@@ -97,14 +97,9 @@ section{
 /* CONFETTI */
 .confetti{
   position:fixed;
-  top:-40px;
-  width:10px;
-  height:16px;
-  opacity:.9;
+  top:-30px;
+  animation:fall linear forwards;
   z-index:3;
-  animation-name:fall;
-  animation-timing-function:ease-in;
-  animation-fill-mode:forwards;
 }
 @keyframes fall{
   to{
@@ -262,7 +257,7 @@ if (guest) {
 </section>
 
 <section id="scene" class="hidden">
-  <div id="drone"><img src="images/4.jpg"></div>
+  <div id="drone"><img src="images/4.jpeg"></div>
   <div id="envelope"><div id="flap"></div></div>
 </section>
 
@@ -278,13 +273,13 @@ if (guest) {
 А тепер не уявляємо життя одне без одного.
 </div>
 
-<div class="block photo"><img src="images/1.jpg"></div>
+<div class="block photo"><img src="images/1.jpeg"></div>
 
 <div class="block text">
 І ось настав той самий день, якого ми так довго чекали.
 </div>
 
-<div class="block photo"><img src="images/2.jpg"></div>
+<div class="block photo"><img src="images/2.jpeg"></div>
 
 <div class="block text">
 <strong>8 серпня 2026 року</strong><br>
@@ -295,7 +290,7 @@ if (guest) {
 
 <div class="block text"><strong>Запрошуємо на Наше весілля!</strong></div>
 
-<div class="block photo"><img src="images/3.jpg"></div>
+<div class="block photo"><img src="images/3.jpeg"></div>
 
 <div class="block text">
 <strong>Початок:</strong> 16:00<br>
@@ -385,5 +380,6 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
 
 
