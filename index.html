@@ -97,13 +97,22 @@ section{
 /* CONFETTI */
 .confetti{
   position:fixed;
-  top:-20px;
-  width:10px;height:16px;
-  animation:fall 3.2s linear forwards;
+  top:-40px;
+  width:10px;
+  height:16px;
+  opacity:.9;
   z-index:3;
+  animation-name:fall;
+  animation-timing-function:ease-in;
+  animation-fill-mode:forwards;
 }
 @keyframes fall{
-  to{transform:translateY(120vh) rotate(360deg);opacity:0}
+  to{
+    transform:
+      translateY(120vh)
+      rotate(var(--rot));
+    opacity:0;
+  }
 }
 
 /* ENVELOPE */
@@ -369,3 +378,4 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
